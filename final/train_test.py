@@ -625,7 +625,7 @@ def test(test_dataset):
   model.load_weights("/home/jhjoo/grand_challenge/best/en/another/7517/ensemble_13.h5")
   model.evaluate(test_dataset)
 if __name__=="__main__":
-  os.environ["CUDA_VISIBLE_DEVICES"]=''
+  os.environ["CUDA_VISIBLE_DEVICES"]='0,1'
 
   '''
   data_list,tr=di_preprocess()
